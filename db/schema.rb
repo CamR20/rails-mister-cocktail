@@ -10,11 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2020_08_14_102350) do
+=======
+ActiveRecord::Schema.define(version: 0) do
+>>>>>>> parent of 6567238... cocktail. models and attributes
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+<<<<<<< HEAD
   create_table "articles", force: :cascade do |t|
     t.string "title"
     t.text "body"
@@ -56,4 +61,6 @@ ActiveRecord::Schema.define(version: 2020_08_14_102350) do
   add_foreign_key "doses", "cocktails"
   add_foreign_key "doses", "ingredients"
   add_foreign_key "reviews", "cocktails"
+=======
+>>>>>>> parent of 6567238... cocktail. models and attributes
 end
