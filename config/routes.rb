@@ -1,10 +1,5 @@
 Rails.application.routes.draw do
-
-  resources :articles
   root to: 'cocktails#index'
-
-  root to: 'articles#index'
-  resources :articles, except: :index
 
   resources :cocktails do
   resources :doses, except: [:destroy]
